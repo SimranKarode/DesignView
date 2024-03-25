@@ -21,4 +21,10 @@ class ReminderCollectionView: UITableViewCell {
 
     @IBOutlet weak var picture: UIImageView!
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 30, right: 10))
+    }
+    
 }
